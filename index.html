@@ -25,31 +25,33 @@
           <label for="outdoors">Do you like the outdoors?</label>
           <select class="form-control" id="outdoors">
             <option value=0></option>
-            <option value=1>Yes, I always prefer to be outside.</option>
-            <option value=-1>No, indoor activities and the nightlife is where it's at.</option>
+            <option value=2>Yes, I always prefer to be outside.</option>
+            <option value=-2>No, indoor activities and the nightlife is where it's at.</option>
             <option value=0>I like spending sometime outdoors, but in moderation.</option>
           </select>
           <label for="drink">What is your ideal drink?</label>
           <select class="form-control" id="drink">
             <option value=0></option>
-            <option value=-1>A fruity mixed drink or other cocktail.</option>
+            <option value=-2>A fruity mixed drink or other cocktail.</option>
             <option value=0>A craft beer of some variety.</option>
-            <option value=1>I don't drink, a cool glass of water is just fine.</option>
+            <option value=2>I don't drink, a cool glass of water is just fine.</option>
           </select>
           <label for="hiking">Are you an avid hiker?</label>
           <select class="form-control" id="hiking">
             <option value=0></option>
             <option value=0>Hiking is okay, I do it from time to time.</option>
-            <option value=-1>No, I abhor unecessary walking</option>
-            <option value=1>Hiking runs in my blood, I can never get enough.</option>
+            <option value=-2>No, I abhor unecessary walking</option>
+            <option value=2>Hiking runs in my blood, I can never get enough.</option>
           </select>
           <label for="rural">Are you one for crowds and busy city streets?</label>
           <select class="form-control" id="rural">
             <option value=0></option>
-            <option value=1>I despise crowds, I prefer quiet and wide open spaces.</option>
-            <option value=-1>Yes, I love the hustle and bustle.</option>
+            <option value=2>I despise crowds, I prefer quiet and wide open spaces.</option>
+            <option value=-2>Yes, I love the hustle and bustle.</option>
             <option value=0>I prefer to avoid large crowds, but I don't mind being in the city.</option>
           </select>
+          <label for="travelers">Number of Travelers</label>
+          <input id="travelers" type="number">
         </div>
           <!-- <div class="checkbox">
             <label>
@@ -67,11 +69,43 @@
         </form>
       </div>
     </div>
-
-    <div class="container destination jumbotron">
-        <h4 class="results">Thank you for your responces <span class="name"></span>, your destination is...</h4>
-
-      </div>
+    <div class="container destination">
+        <h4 class="results jumbotron">Thank you for your selections <span class="name"></span>, your destination is...<span class="himalayas">the Himalayas!!</span><span class="portland">Portland!!</span><span class="bangkok">Bangkok!!</span></h4>
+        <div class="portland container row">
+          <div class="portland col-md-4">
+            <img class="portland" src="img/portland.jpg"/>
+          </div>
+          <div class="portland col-md-4">
+            <img class="portland" src="img/portland1.jpg"/>
+          </div>
+          <div class="portland col-md-4">
+            <img class="portland" src="img/portland2.jpg"/>
+          </div>
+        </div>
+        <div class="himalayas container row">
+          <div class="himalayas col-md-4">
+            <img class="himalayas" src="img/himalayas.jpg"/>
+          </div>
+          <div class="himalayas col-md-4">
+            <img class="himalayas" src="img/himalayas1.jpg"/>
+          </div>
+          <div class="himalayas col-md-4">
+            <img class="himalayas" src="img/himalayas2.jpg"/>
+          </div>
+        </div>
+        <div class="bangkok container row">
+          <div class="bangkok col-md-4">
+            <img class="bangkok" src="img/bangkok.jpg"/>
+          </div>
+          <div class="bangkok col-md-4">
+            <img class="bangkok" src="img/bangkok1.jpg"/>
+          </div>
+          <div class="bangkok col-md-4">
+            <img class="bangkok" src="img/bangkok2.jpg"/>
+          </div>
+        </div>
+        <h4 class='results'>An email will be sent to <span class="email"></span> with an itinerary for <span class="travelers"></span> travelers!</h4>
+    </div>
 
     </div>
 

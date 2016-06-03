@@ -4,22 +4,25 @@ $(function() {
     $('#home').hide();
     $('.results').show();
     var nameInput = $('#name').val();
-    var hikingInput = parseInt($('#hiking'.val());
+    var emailInput = $('#email').val();
+    var travelersInput = parseInt($('#traverlers').val());
+    var hikingInput = parseInt($('#hiking').val());
     var drinkInput = parseInt($('#drink').val());
     var ruralInput = parseInt($('#rural').val());
     var outdoorsInput = parseInt($('#outdoors').val());
     var total = hikingInput + drinkInput + ruralInput + outdoorsInput;
-    if ( total <= -2 ) {
+    if ( total < -2 ) {
       $('.bangkok').show();
-    } else if ( total <= 1 ) {
+    } else if ( total <= 2 && total >= -2 ) {
       $('.portland').show();
-    } else if ( total <= 4 ) {
+    } else if ( total > 2 ) {
       $('.himalayas').show();
     } else {
-      console.log(); 
+      console.log();
     }
-
+    $('.travelers').text(travelersInput);
     $('.name').text(nameInput);
+    $('.email').text(emailInput);
   });
 
 });
