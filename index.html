@@ -10,11 +10,12 @@
   </head>
   <body>
     <header>
-      <img class="container" class="banner" src="img/banner.jpg"/>
+      <img class="container banner" src="img/banner.jpg"/>
     </header>
     <div class="home">
       <div class="container jumbotron center">
-        <h2>To begin, please provide your contact and preference information below.</h2>
+        <h1>Vacation Selector</h1>
+        <h4>To begin, please provide your contact and preference information below.</h2>
       </div>
       <div class="container">
         <form id="blanks">
@@ -25,33 +26,37 @@
           <label for="phone">Phone Number</label>
           <input id="phone" type="tel">
         <div class="container jumbotron">
+          <span class="glyphicon glyphicon-tree-conifer" aria-hidden="true"></span>
           <label for="outdoors">Do you like the outdoors?</label>
           <select class="form-control" id="outdoors">
             <option value=0></option>
-            <option value=2>Yes, I always prefer to be outside.</option>
-            <option value=-2>No, indoor activities and the nightlife is where it's at.</option>
+            <option value=2>Yes, I usually prefer to be outside.</option>
+            <option value=-2>No, I am more comfortable with indoor activities.</option>
             <option value=0>I like spending sometime outdoors, but in moderation.</option>
           </select>
+          <span class="glyphicon glyphicon-glass" aria-hidden="true"></span>
           <label for="drink">What is your ideal drink?</label>
           <select class="form-control" id="drink">
             <option value=0></option>
             <option value=-2>A fruity mixed drink or other cocktail.</option>
             <option value=0>A craft beer of some variety.</option>
-            <option value=2>I don't drink, a cool glass of water is just fine.</option>
+            <option value=2>I prefer a cool glass of water.</option>
           </select>
+          <span class="glyphicon glyphicon-sunglasses" aria-hidden="true"></span>
           <label for="hiking">Are you an avid hiker?</label>
           <select class="form-control" id="hiking">
             <option value=0></option>
-            <option value=0>Hiking is okay, I do it from time to time.</option>
-            <option value=-2>No, I abhor unecessary walking</option>
-            <option value=2>Hiking runs in my blood, I can never get enough.</option>
+            <option value=0>I enjoy hiking every now and then.</option>
+            <option value=-2>No, I avoid unecessary walking whenever I can.</option>
+            <option value=2>Its hard to get enough hiking, it is one of my passions.</option>
           </select>
+          <span class="glyphicon glyphicon-road" aria-hidden="true"></span>
           <label for="rural">Are you one for crowds and busy city streets?</label>
           <select class="form-control" id="rural">
             <option value=0></option>
-            <option value=2>I despise crowds, I prefer quiet and wide open spaces.</option>
+            <option value=2>I hate crowds, I prefer scenic wide open spaces.</option>
             <option value=-2>Yes, I love the hustle and bustle.</option>
-            <option value=0>I prefer to avoid large crowds, but I don't mind being in the city.</option>
+            <option value=0>I prefer to avoid large crowds, but I don't mind the atmosphere of a city.</option>
           </select>
           <label for="datedepart" id="pad1">Departure Date</label>
           <input id="datedepart" type="date">
