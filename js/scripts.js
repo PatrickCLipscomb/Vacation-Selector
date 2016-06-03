@@ -8,9 +8,16 @@ $(function() {
     var drinkInput = parseInt($('#drink').val());
     var ruralInput = parseInt($('#rural').val());
     var outdoorsInput = parseInt($('#outdoors').val());
-
-
-
+    var total = hikingInput + drinkInput + ruralInput + outdoorsInput;
+    if ( total <= -2 ) {
+      $('.bangkok').show();
+    } else if ( total <= 1 ) {
+      $('.portland').show();
+    } else if ( total <= 4 ) {
+      $('.himalayas').show();
+    } else {
+      console.log(); 
+    }
 
     $('.name').text(nameInput);
   });
