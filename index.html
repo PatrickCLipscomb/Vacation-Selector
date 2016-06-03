@@ -12,31 +12,34 @@
     <div class="container jumbotron center" id="home">
       <h2>To begin, please fill in your contact information below.</h2>
       <div class="container">
-        <form>
+        <form id="blanks">
           <label for="name">Full Name</label>
           <input required="true" id="name" type="text">
           <label for="email">Email</label>
           <input required="true" id="email" type="text">
           <label for="phone">Phone Number</label>
           <input required="true" id="phone" type="tel">
-          <button type="submit" class="btn btn-success" id="personalbtn">Submit my contact information.</button>
+          <button type="submit" class="btn btn-success">Submit my contact information.</button>
         </form>
       </div>
     </div>
     <div class="container center" id="personal">
-      <h4>Thank you <span class="name"></span> for providing your information. Please check this box allowing us to sell this information to google.</h4>
-      <div class="checkbox">
-        <label>
-          <input type="checkbox" value="affirmative">
-          I agree to have my information sold&mdash;proceed to select a vacation destination.
-        </label>
-      </div>
-      <div class="checkbox">
-        <label>
-          <input type="checkbox" value="negative">
-          I DO NOT agree to have my information sold&mdash;exit from this site.
-        </label>
-      </div>
+      <h4>Thank you <span class="name"></span> for providing your information. Please check the box allowing us to sell this information to google.</h4>
+      <form id="boxes">
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" value="affirmative">
+            I agree to have my information sold&mdash;proceed to select a vacation destination.
+          </label>
+        </div>
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" value="negative">
+            I DO NOT agree to have my information sold&mdash;exit from this site.
+          </label>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit my selection.</button>
+      </form>
     </div>
     <div class="container center" id="selector">
       <h4>You may now chose from the options below to find your ultimate vacation destination. <span class="reward">You've earned it.</span></h4>
