@@ -1,3 +1,11 @@
 .center {
   text-align: center;
 }
+
+#personal {
+  display: none;
+}
+
+#selector {
+  display: none;
+}
