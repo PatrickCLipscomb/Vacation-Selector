@@ -4,11 +4,11 @@ $(function() {
     var proceed = $('input#continue').val();
     var seeSelects = $('input@seeselects').val();
 
-    if ( proceed ) {
+    if ( proceed === true ) {
       $('#home').hide();
       $('#personal').show();
       $('#selector').hide();
-    } else if ( seeSelects) {
+    } else if ( seeSelects === true ) {
       alert('take to options');
     }
 });

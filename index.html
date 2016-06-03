@@ -9,8 +9,10 @@
     <script src="js/scripts.js"></script>
   </head>
   <body>
-    <div class="container jumbotron center" id="home">
-      <h2>To begin, please fill in your contact information below.</h2>
+    <div id="home">
+      <div class="container jumbotron center">
+        <h2>To begin, please provide your contact information and responses below.</h2>
+      </div>
       <div class="container">
         <form id="blanks">
           <label for="name">Full Name</label>
@@ -19,23 +21,60 @@
           <input required="true" id="email" type="text">
           <label for="phone">Phone Number</label>
           <input required="true" id="phone" type="tel">
-          <div class="checkbox">
-            <label>
-              <input type="checkbox" value="seeselects" id="seeselects">
-              See my options.
-            </label>
-          </div>
-          <div class="checkbox">
+        <div class="container jumbotron">
+          <label for="english">International or domestic?</label>
+          <select class="form-control" id="english">
+            <option value=0></option>
+            <option value=2>I live on my family's legacy farm.</option>
+            <option value=-1>No, why would I live on a farm?</option>
+            <option value=-2>I don't even know anyone who lives on a farm...</option>
+          </select>
+          <label for="outdoors">Do you like the outdoors?</label>
+          <select class="form-control" id="outdoors">
+            <option value=0></option>
+            <option value=1>Yes</option>
+            <option value=-1>No</option>
+            <option value=-1>If I care</option>
+          </select>
+          <label for="environment">Do you prefer a day at the beach or a day in the mountains?</label>
+          <select class="form-control" id="environment">
+            <option value=0></option>
+            <option value=-1>Yes</option>
+            <option value=1>No</option>
+            <option value=2>In my pants?</option>
+          </select>
+          <label for="rural">Do you like big cities?</label>
+          <select class="form-control" id="rural">
+            <option value=0></option>
+            <option value=2>I live on my family's legacy farm.</option>
+            <option value=-1>No, why would I live on a farm?</option>
+            <option value=-2>I don't even know anyone who lives on a farm...</option>
+          </select>
+        </div>
+          <!-- <div class="checkbox">
             <label>
               <input type="checkbox" value="proceed" id="proceed">
               Continue to the next step.
             </label>
           </div>
-          <button type="submit" class="btn btn-success">Submit my contact information.</button>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" value="seeselects" id="seeselects">
+              See my options.
+            </label>
+          </div> -->
+          <button type="submit" class="btn btn-success">Submit my answers</button>
         </form>
       </div>
     </div>
-    <div class="container center" id="personal">
+
+    <div class="container destination"
+
+
+
+
+
+    <!-- <div class="container center" id="personal">
       <h4>Thank you <span class="name"></span> for providing your information. Please check the box allowing us to sell this information to google.</h4>
       <form id="boxes">
         <div class="checkbox">
@@ -55,6 +94,6 @@
     </div>
     <div class="container center" id="selector">
       <h4>You may now chose from the options below to find your ultimate vacation destination. <span class="reward">You've earned it.</span></h4>
-    </div>
+    </div> -->
   </body>
 </html>
