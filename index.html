@@ -10,13 +10,31 @@
   </head>
   <body>
     <header>
-      <img class="container banner" src="img/banner.jpg"/>
+      <img class="container" id="banner" src="img/banner.jpg"/>
     </header>
     <div class="home">
       <div class="container jumbotron center">
         <h1>Vacation Selector</h1>
         <h4>To begin, please provide your contact and preference information below.</h2>
       </div>
+
+      <div class="checkbox center">
+        <span class="glyphicon glyphicon-usd" aria-hidden="true"></span>
+        <label>
+          <input id="cents" type="checkbox" value="1">
+          I'm on a budget.
+        </label>
+      </div>
+      <div class="checkbox center">
+        <span class="glyphicon glyphicon-usd" aria-hidden="true"></span>
+        <span class="glyphicon glyphicon-usd" aria-hidden="true"></span>
+        <span class="glyphicon glyphicon-usd" aria-hidden="true"></span>
+        <label>
+          <input id="dollars" type="checkbox" value="1">
+          I have stacks to blow.
+        </label>
+      </div>
+
       <div class="container">
         <form id="blanks">
           <label for="name">Full Name</label>
@@ -80,7 +98,7 @@
       </div>
     </div>
     <div class="container destination">
-      <h4 class="results jumbotron center">Thank you for your selections <span class="name"></span>, your destination is...<span class="himalayas">the Himalayas!!</span><span class="portland">Portland!!</span><span class="bangkok">Bangkok!!</span></h4>
+      <h4 class="results jumbotron center">Thank you for your selections <span class="name"></span>, your destination is...<span class="himalayas">the Himalayas!!</span><span class="austin">Austin, Texas!!</span><span class="sanfran">San Francisco!!</span><span class="sierras">the Sierra Nevadas!!</span><span class="portland">Portland!!</span><span class="bangkok">Bangkok!!</span></h4>
       <p class='portland'>
         Set against the backdrop of majestic Mount Hood, Portland combines a sophisticated, cosmopolitan atmosphere with a refreshingly friendly, small-town warmth that makes it a natural for tours of all types. Here is a <a class="portland" href="http://www.travelportland.com/">link</a> with more information about the destination.
       </p>
@@ -89,6 +107,15 @@
       </p>
       <p class="bangkok">
         Bangkok, also known as the City of Angels and Venice of the East, will hit you like a ton of bricks. It's hot, polluted, and chaotic, and it thrills with energy; there's such a vast array of sightseeing, shopping, and eating possibilities that you'll have little time to rest. When you do find a moment, pamper yourself with spa treatments, skyline-view bars, luxurious hotels, and excellent restaurants. Here is a <a class="bangkok" href="http://www.fodors.com/world/asia/thailand/bangkok">link</a> with more information about the destination.
+      </p>
+      <p class="austin">
+        Every year thousands of hipsters, groupies, and die-hard fans flock to Austin for the annual South by Southwest festival, which has catapulted the Texas city up the must-visit charts for many travelers. The sandstone Capitol building is symbolic of the Lone Star State’s "bigger is better" mentality, featuring a gorgeous whispering gallery rotunda and 22 acres of grounds. Cool off with a dip in Barton Springs, a huge natural limestone pool that’s fed by underground sources. Here is a <a class="austin" href="https://www.tripadvisor.com/Tourism-g30196-Austin_Texas-Vacations.html">link</a> with more information about the destination.
+      </p>
+      <p class="sanfran">
+        With its myriad hills and spectacular bay, San Francisco beguiles with natural beauty, vibrant neighborhoods, and contagious energy. From the hipster Mission District to the sassy Castro, from bustling Union Square to enduring Chinatown, this dynamic town thrives on variety. The city makes it wonderfully easy to tap into the good life, too: between San Francisco's hot arts scene, tempting boutiques, parks perfect for jogging or biking, and all those stellar locavore restaurants and cocktail bars, it's the ultimate destination for relaxed self-indulgence. Here is a <a class="sanfran" href="http://www.fodors.com/world/north-america/usa/california/san-francisco">link</a> with more information about the destination.
+      </p>
+      <p class="sierras">
+        An outdoor adventurer’s wonderland, the Sierra Nevada is a year-round pageant of snow sports, white-water rafting, hiking, cycling and rock climbing. Skiers and snowboarders blaze through hushed pine-tree slopes, and wilderness seekers come to escape the stresses of modern civilization. Here is a <a class="sierras" href="http://www.lonelyplanet.com/usa/california/sierra-nevada/introduction">link</a> with more information about the destination.
       </p>
 
       <div class="portland container row thumbnail">
@@ -100,6 +127,39 @@
         </div>
         <div class="portland col-md-4">
           <img class="portland" src="img/portland2.jpg"/>
+        </div>
+      </div>
+      <div class="austin container row thumbnail">
+        <div class="austin col-md-4">
+          <img class="austin" src="img/austin.jpg"/>
+        </div>
+        <div class="austin col-md-4">
+          <img class="austin" src="img/austin1.jpg"/>
+        </div>
+        <div class="austin col-md-4">
+          <img class="austin" src="img/austin2.jpg"/>
+        </div>
+      </div>
+      <div class="sierras container row thumbnail">
+        <div class="sierras col-md-4">
+          <img class="sierras" src="img/sierras.jpg"/>
+        </div>
+        <div class="sierras col-md-4">
+          <img class="sierras" src="img/sierras1.jpg"/>
+        </div>
+        <div class="sierras col-md-4">
+          <img class="sierras" src="img/sierras2.jpg"/>
+        </div>
+      </div>
+      <div class="sanfran container row thumbnail">
+        <div class="sanfran col-md-4">
+          <img class="sanfran" src="img/sanfran.jpg"/>
+        </div>
+        <div class="sanfran col-md-4">
+          <img class="sanfran" src="img/sanfran1.jpg"/>
+        </div>
+        <div class="sanfran col-md-4">
+          <img class="sanfran" src="img/sanfran2.jpg"/>
         </div>
       </div>
       <div class="himalayas container row thumbnail">
