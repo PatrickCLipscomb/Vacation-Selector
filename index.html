@@ -9,10 +9,10 @@
     <script src="js/scripts.js"></script>
   </head>
   <body>
-    <div class="container jumbotron">
+    <div class="container jumbotron center" id="home">
       <h2>To begin, please fill in your contact information below.</h2>
-      <div class="container cntr">
-        <form id="contact">
+      <div class="container">
+        <form>
           <label for="name">Full Name</label>
           <input required="true" id="name" type="text">
           <label for="email">Email</label>
@@ -23,8 +23,22 @@
         </form>
       </div>
     </div>
-    <div class="container center">
+    <div class="container center" id="personal">
       <h4>Thank you <span class="name"></span> for providing your information. Please check this box allowing us to sell this information to google.</h4>
+      <div class="checkbox">
+        <label>
+          <input type="checkbox" value="affirmative">
+          I agree to have my information sold&mdash;proceed to select a vacation destination.
+        </label>
+      </div>
+      <div class="checkbox">
+        <label>
+          <input type="checkbox" value="negative">
+          I DO NOT agree to have my information sold&mdash;exit from this site.
+        </label>
+      </div>
+    </div>
+    <div class="container center" id="selector">
       <h4>You may now chose from the options below to find your ultimate vacation destination. <span class="reward">You've earned it.</span></h4>
     </div>
   </body>
