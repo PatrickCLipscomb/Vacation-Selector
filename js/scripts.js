@@ -1,11 +1,13 @@
 $(function() {
   $('form#blanks').submit(function(event) {
     event.preventDefault();
-    $('#home').hide();
+    $('.home').hide();
     $('.results').show();
     var nameInput = $('#name').val();
     var emailInput = $('#email').val();
-    var travelersInput = parseInt($('#traverlers').val());
+    var phoneInput = $('#phone').val();
+    var departInput = $('#datedepart').val();
+    var returnInput = $('#datereturn').val();
     var hikingInput = parseInt($('#hiking').val());
     var drinkInput = parseInt($('#drink').val());
     var ruralInput = parseInt($('#rural').val());
@@ -20,9 +22,11 @@ $(function() {
     } else {
       console.log();
     }
-    $('.travelers').text(travelersInput);
+    $('.datedepart').text(departInput);
+    $('.datereturn').text(returnInput);
     $('.name').text(nameInput);
     $('.email').text(emailInput);
+    $('.phone').text(phoneInput);
   });
 
 });

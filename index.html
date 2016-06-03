@@ -9,9 +9,12 @@
     <script src="js/scripts.js"></script>
   </head>
   <body>
-    <div id="home">
+    <header>
+      <img class="container" class="banner" src="img/banner.jpg"/>
+    </header>
+    <div class="home">
       <div class="container jumbotron center">
-        <h2>To begin, please provide your contact information and responses below.</h2>
+        <h2>To begin, please provide your contact and preference information below.</h2>
       </div>
       <div class="container">
         <form id="blanks">
@@ -50,8 +53,10 @@
             <option value=-2>Yes, I love the hustle and bustle.</option>
             <option value=0>I prefer to avoid large crowds, but I don't mind being in the city.</option>
           </select>
-          <label for="travelers">Number of Travelers</label>
-          <input id="travelers" type="number">
+          <label for="datedepart" id="pad1">Departure Date</label>
+          <input id="datedepart" type="date">
+          <label for="datereturn" id="pad1">Return Date</label>
+          <input id="datereturn" type="date">
         </div>
           <!-- <div class="checkbox">
             <label>
@@ -70,41 +75,54 @@
       </div>
     </div>
     <div class="container destination">
-        <h4 class="results jumbotron">Thank you for your selections <span class="name"></span>, your destination is...<span class="himalayas">the Himalayas!!</span><span class="portland">Portland!!</span><span class="bangkok">Bangkok!!</span></h4>
-        <div class="portland container row">
-          <div class="portland col-md-4">
-            <img class="portland" src="img/portland.jpg"/>
-          </div>
-          <div class="portland col-md-4">
-            <img class="portland" src="img/portland1.jpg"/>
-          </div>
-          <div class="portland col-md-4">
-            <img class="portland" src="img/portland2.jpg"/>
-          </div>
+      <h4 class="results jumbotron center">Thank you for your selections <span class="name"></span>, your destination is...<span class="himalayas">the Himalayas!!</span><span class="portland">Portland!!</span><span class="bangkok">Bangkok!!</span></h4>
+      <p class='portland'>
+        Set against the backdrop of majestic Mount Hood, Portland combines a sophisticated, cosmopolitan atmosphere with a refreshingly friendly, small-town warmth that makes it a natural for tours of all types. Here is a <a class="portland" href="http://www.travelportland.com/">link</a> with more information about the destination.
+      </p>
+      <p class="himalayas">
+        For mountain lovers and the vertically inclined the Himalayas represent nothing less than the crowning apex of nature's grandeur. Here dramatic forested gorges rise to skylines of snow-capped glaciated peaks through a landscape that ranges from high-altitude desert to dripping rhododendron forest. Home to some 40 million people, this is no alpine wilderness, but rather a vibrant mosaic of peoples, cultures and communities, criss-crossed by ancient trading and pilgrimage routes that offer their own unique inspiration. Here is a <a class="himalayas" href="https://www.lonelyplanet.com/asia/travel-tips-and-articles/77626">link</a> with more information about the destination.
+      </p>
+      <p class="bangkok">
+        Bangkok, also known as the City of Angels and Venice of the East, will hit you like a ton of bricks. It's hot, polluted, and chaotic, and it thrills with energy; there's such a vast array of sightseeing, shopping, and eating possibilities that you'll have little time to rest. When you do find a moment, pamper yourself with spa treatments, skyline-view bars, luxurious hotels, and excellent restaurants. Here is a <a class="bangkok" href="http://www.fodors.com/world/asia/thailand/bangkok">link</a> with more information about the destination.
+      </p>
+
+      <div class="portland container row thumbnail">
+        <div class="portland col-md-4">
+          <img class="portland" src="img/portland.jpg"/>
         </div>
-        <div class="himalayas container row">
-          <div class="himalayas col-md-4">
-            <img class="himalayas" src="img/himalayas.jpg"/>
-          </div>
-          <div class="himalayas col-md-4">
-            <img class="himalayas" src="img/himalayas1.jpg"/>
-          </div>
-          <div class="himalayas col-md-4">
-            <img class="himalayas" src="img/himalayas2.jpg"/>
-          </div>
+        <div class="portland col-md-4">
+          <img class="portland" src="img/portland1.jpg"/>
         </div>
-        <div class="bangkok container row">
-          <div class="bangkok col-md-4">
-            <img class="bangkok" src="img/bangkok.jpg"/>
-          </div>
-          <div class="bangkok col-md-4">
-            <img class="bangkok" src="img/bangkok1.jpg"/>
-          </div>
-          <div class="bangkok col-md-4">
-            <img class="bangkok" src="img/bangkok2.jpg"/>
-          </div>
+        <div class="portland col-md-4">
+          <img class="portland" src="img/portland2.jpg"/>
         </div>
-        <h4 class='results'>An email will be sent to <span class="email"></span> with an itinerary for <span class="travelers"></span> travelers!</h4>
+      </div>
+      <div class="himalayas container row thumbnail">
+        <div class="himalayas col-md-4">
+          <img class="himalayas" src="img/himalayas.jpg"/>
+        </div>
+        <div class="himalayas col-md-4">
+          <img class="himalayas" src="img/himalayas1.jpg"/>
+        </div>
+        <div class="himalayas col-md-4">
+          <img class="himalayas" src="img/himalayas2.jpg"/>
+        </div>
+      </div>
+      <div class="bangkok container row thumbnail">
+        <div class="bangkok col-md-4">
+          <img class="bangkok" src="img/bangkok.jpg"/>
+        </div>
+        <div class="bangkok col-md-4">
+          <img class="bangkok" src="img/bangkok1.jpg"/>
+        </div>
+        <div class="bangkok col-md-4">
+          <img class="bangkok" src="img/bangkok2.jpg"/>
+        </div>
+      </div>
+      <div class="results jumbotron container center"
+        <h3 class='results center'>An email will be sent to <span class="email"></span> with an itinerary. You will be notified of any changes at <span class="phone"></span>.</h3>
+        <h4 class='results center'>Your depart date is scheduled for <span class="datedepart"></span> and your return date is scheduled for <span class="datereturn"></span>
+      </div>
     </div>
 
     </div>

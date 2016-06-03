@@ -9,3 +9,11 @@
 img {
   width: 300px;
 }
+
+#pad1 {
+  padding-top: 20px;
+}
+
+.banner {
+  width: 100%
+}
