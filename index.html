@@ -9,19 +9,23 @@
     <script src="js/scripts.js"></script>
   </head>
   <body>
-    <div class="container jumpbotron">
-      <h1>Please fill in your contact information below, and then chose from the options below to find your ultimate vacation destination.</h1>
+    <div class="container jumbotron">
+      <h2>To begin, please fill in your contact information below.</h2>
+      <div class="container cntr">
+        <form id="contact">
+          <label for="name">Full Name</label>
+          <input required="true" id="name" type="text">
+          <label for="email">Email</label>
+          <input required="true" id="email" type="text">
+          <label for="phone">Phone Number</label>
+          <input required="true" id="phone" type="tel">
+          <button type="submit" class="btn btn-success">Submit my contact information.</button>
+        </form>
+      </div>
     </div>
-    <div class="container cntr">
-      <form id="contact">
-        <label for="name">Full Name</label>
-        <input required="true" id="name" type="text">
-        <label for="email">Email</label>
-        <input required="true" id="email" type="text">
-        <label for="phone">Phone Number</label>
-        <input required="true" id="phone" type="tel">
-        <button type="submit" class="btn">Submit my contact information.</button>
-      </form>
+    <div class="container center">
+      <h4>Thank you <span class="name"></span> for providing your information. Please check this box allowing us to sell this information to google.</h4>
+      <h4>You may now chose from the options below to find your ultimate vacation destination. <span class="reward">You've earned it.</span></h4>
     </div>
   </body>
 </html>
