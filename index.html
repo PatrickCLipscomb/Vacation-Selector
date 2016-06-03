@@ -16,39 +16,39 @@
       <div class="container">
         <form id="blanks">
           <label for="name">Full Name</label>
-          <input required="true" id="name" type="text">
+          <input id="name" type="text">
           <label for="email">Email</label>
-          <input required="true" id="email" type="text">
+          <input id="email" type="text">
           <label for="phone">Phone Number</label>
-          <input required="true" id="phone" type="tel">
+          <input id="phone" type="tel">
         <div class="container jumbotron">
-          <label for="english">International or domestic?</label>
-          <select class="form-control" id="english">
-            <option value=0></option>
-            <option value=2>I live on my family's legacy farm.</option>
-            <option value=-1>No, why would I live on a farm?</option>
-            <option value=-2>I don't even know anyone who lives on a farm...</option>
-          </select>
           <label for="outdoors">Do you like the outdoors?</label>
           <select class="form-control" id="outdoors">
             <option value=0></option>
-            <option value=1>Yes</option>
-            <option value=-1>No</option>
-            <option value=-1>If I care</option>
+            <option value=1>Yes, I always prefer to be outside.</option>
+            <option value=-1>No, indoor activities and the nightlife is where it's at.</option>
+            <option value=0>I like spending sometime outdoors, but in moderation.</option>
           </select>
-          <label for="environment">Do you prefer a day at the beach or a day in the mountains?</label>
-          <select class="form-control" id="environment">
+          <label for="drink">What is your ideal drink?</label>
+          <select class="form-control" id="drink">
             <option value=0></option>
-            <option value=-1>Yes</option>
-            <option value=1>No</option>
-            <option value=2>In my pants?</option>
+            <option value=-1>A fruity mixed drink or other cocktail.</option>
+            <option value=0>A craft beer of some variety.</option>
+            <option value=1>I don't drink, a cool glass of water is just fine.</option>
           </select>
-          <label for="rural">Do you like big cities?</label>
+          <label for="hiking">Are you an avid hiker?</label>
+          <select class="form-control" id="hiking">
+            <option value=0></option>
+            <option value=0>Hiking is okay, I do it from time to time.</option>
+            <option value=-1>No, I abhor unecessary walking</option>
+            <option value=1>Hiking runs in my blood, I can never get enough.</option>
+          </select>
+          <label for="rural">Are you one for crowds and busy city streets?</label>
           <select class="form-control" id="rural">
             <option value=0></option>
-            <option value=2>I live on my family's legacy farm.</option>
-            <option value=-1>No, why would I live on a farm?</option>
-            <option value=-2>I don't even know anyone who lives on a farm...</option>
+            <option value=1>I despise crowds, I prefer quiet and wide open spaces.</option>
+            <option value=-1>Yes, I love the hustle and bustle.</option>
+            <option value=0>I prefer to avoid large crowds, but I don't mind being in the city.</option>
           </select>
         </div>
           <!-- <div class="checkbox">
@@ -68,7 +68,12 @@
       </div>
     </div>
 
-    <div class="container destination"
+    <div class="container destination jumbotron">
+        <h4 class="results">Thank you for your responces <span class="name"></span>, your destination is...</h4>
+
+      </div>
+
+    </div>
 
 
 

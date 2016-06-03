@@ -1,17 +1,32 @@
 $(function() {
   $('form#blanks').submit(function(event) {
     event.preventDefault();
-    var proceed = $('input#continue').val();
-    var seeSelects = $('input@seeselects').val();
+    $('#home').hide();
+    $('.results').show();
+    var nameInput = $('#name').val();
+    var hikingInput = parseInt($('#hiking'.val());
+    var drinkInput = parseInt($('#drink').val());
+    var ruralInput = parseInt($('#rural').val());
+    var outdoorsInput = parseInt($('#outdoors').val());
 
-    if ( proceed === true ) {
-      $('#home').hide();
-      $('#personal').show();
-      $('#selector').hide();
-    } else if ( seeSelects === true ) {
-      alert('take to options');
-    }
+
+
+
+    $('.name').text(nameInput);
+  });
+
 });
+
+// if ( proceed === true ) {
+//   $('#home').hide();
+//   $('#personal').show();
+//   $('#selector').hide();
+// } else if ( seeSelects === true ) {
+//   alert('take to options');
+// }
+
+// var proceed = $('input#continue').val();
+// var seeSelects = $('input@seeselects').val();
 
   //   $('#home').hide();
   //   $('#selector').hide();
@@ -33,5 +48,3 @@ $(function() {
   //     $('#selector').show();
   //   }
   // }
-
-});

@@ -2,10 +2,6 @@
   text-align: center;
 }
 
-#personal {
-  display: none;
-}
-
-#selector {
+.results {
   display: none;
 }
