@@ -16,6 +16,9 @@ $(function() {
     if ( $('#dollars').is(':checked') && $('#cents').is(':checked') ) {
       alert("How do you have so much money? Please choose more reasonably.");
       $('.home').show();
+    } else if ( !$('#dollars').is(':checked') && !$('#cents').is(':checked') ) {
+      alert("If you don't have any money, then vacation probably isn't the best choice.");
+      $('.home').show();
     } else if ( $('#dollars').is(':checked') ) {
       if ( total < -2 ) {
         $('.bangkok').show();
@@ -54,35 +57,3 @@ $(function() {
   });
 
 });
-
-// if ( proceed === true ) {
-//   $('#home').hide();
-//   $('#personal').show();
-//   $('#selector').hide();
-// } else if ( seeSelects === true ) {
-//   alert('take to options');
-// }
-
-// var proceed = $('input#continue').val();
-// var seeSelects = $('input@seeselects').val();
-
-  //   $('#home').hide();
-  //   $('#selector').hide();
-  //   $('#personal').();
-  // });
-  //
-  // $('form#boxes').submit(function(event) {
-  //   event.preventDefault();
-  //   $('#personal').hide();
-  //   var negSelection = ('input#negative').val();
-  //   var affirmSelection = ('input#affirmative').val();
-  //   if ( negSelection ) {
-  //     $('#home').hide();
-  //     $('#personal').hide();
-  //     $('#selector').hide();
-  //   } else if ( affirmSelection ) {
-  //     $('#home').hide();
-  //     $('#personal').hide();
-  //     $('#selector').show();
-  //   }
-  // }
