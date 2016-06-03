@@ -19,6 +19,18 @@
           <input required="true" id="email" type="text">
           <label for="phone">Phone Number</label>
           <input required="true" id="phone" type="tel">
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" value="seeselects" id="seeselects">
+              See my options.
+            </label>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" value="proceed" id="proceed">
+              Continue to the next step.
+            </label>
+          </div>
           <button type="submit" class="btn btn-success">Submit my contact information.</button>
         </form>
       </div>
@@ -28,13 +40,13 @@
       <form id="boxes">
         <div class="checkbox">
           <label>
-            <input type="checkbox" value="affirmative">
+            <input type="checkbox" value="affirmative" id="affirmative">
             I agree to have my information sold&mdash;proceed to select a vacation destination.
           </label>
         </div>
         <div class="checkbox">
           <label>
-            <input type="checkbox" value="negative">
+            <input type="checkbox" value="negative" id="negative">
             I DO NOT agree to have my information sold&mdash;exit from this site.
           </label>
         </div>

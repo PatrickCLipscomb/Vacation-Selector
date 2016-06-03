@@ -1,16 +1,37 @@
 $(function() {
   $('form#blanks').submit(function(event) {
     event.preventDefault();
-    $('#home').hide();
-    $('#personal').show();
+    var proceed = $('input#continue').val();
+    var seeSelects = $('input@seeselects').val();
 
-  });
+    if ( proceed ) {
+      $('#home').hide();
+      $('#personal').show();
+      $('#selector').hide();
+    } else if ( seeSelects) {
+      alert('take to options');
+    }
+});
 
-  $('form#boxes').submit(function(event) {
-    event.preventDefault();
-    $('#personal').hide();
-    var selection = 
-    if ()
-  }
+  //   $('#home').hide();
+  //   $('#selector').hide();
+  //   $('#personal').();
+  // });
+  //
+  // $('form#boxes').submit(function(event) {
+  //   event.preventDefault();
+  //   $('#personal').hide();
+  //   var negSelection = ('input#negative').val();
+  //   var affirmSelection = ('input#affirmative').val();
+  //   if ( negSelection ) {
+  //     $('#home').hide();
+  //     $('#personal').hide();
+  //     $('#selector').hide();
+  //   } else if ( affirmSelection ) {
+  //     $('#home').hide();
+  //     $('#personal').hide();
+  //     $('#selector').show();
+  //   }
+  // }
 
 });
